@@ -79,9 +79,61 @@ const cardNumberPattern = {
       return number.match(item.regex)
 
     })
-    console.log(foundMask)
+
     return foundMask;
   }
 }
 
 const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
+
+
+const addButton = document.getElementById("add-card");
+
+addButton.addEventListener("click", () => {
+  alert("Cartão adicionado com sucesso!")
+})
+
+// Desativando o reload do submit
+document.querySelector("form").addEventListener("submit", (event) => {
+  event.preventDefault()
+})
+
+const cardHolder = document.querySelector("#card-holder")
+
+cardHolder.addEventListener("input", () => {
+  const ccHolder = document.querySelector(".cc-holder .value")
+
+  ccHolder.innerHTML = cardHolder.value.length === 0 ? "FULANO DA SILVA" : cardHolder.value
+})
+
+securityCodeMasked.on("accept", () => {
+  updateSecurityCode(securityCodeMasked.value)
+})
+
+function updateSecurityCode(code) {
+  const ccSecurity = document.querySelector(".cc-security .value")
+
+  ccSecurity.innerHTML = code.length === 0 ? "123" : code
+}
+
+cardNumberMasked.on("accept", () => {
+  const cardType = cardNumberMasked.masked.currentMask.cardtype
+  setCardType(cardType)
+  updateCardNumber(cardNumberMasked.value)
+})
+
+function updateCardNumber(number) {
+  const ccNumber = document.querySelector(".cc-number")
+
+  ccNumber.innerHTML = number.length === 0 ? "1234 5678 9012 3456" : number
+}
+
+expirationDateMasked.on("accept", () => {
+  updateExpirationDate(expirationDateMasked.value)
+})
+
+function updateExpirationDate(date) {
+  const ccDate = document.querySelector(".cc-extra .value")
+
+  ccDate.innerHTML = date.length === 0 ? "02/32" : date
+} 
