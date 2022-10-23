@@ -18,7 +18,7 @@
 
 Aqui você pode conferir o layout em suas respectivas versões. <br>
 
-[👉 Link para visualizar a pagina inteira](#)
+[👉 Link para visualizar a pagina inteira](https://explorer-lab-01-rho-woad.vercel.app/)
 
 ### Versão Web 🖥️
 
