@@ -41,7 +41,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![image](https://img.shields.io/badge/HTML-orangered?style=for-the-badge&logo=html5&logoColor=white)
 ![image](https://img.shields.io/badge/CSS-blue?&style=for-the-badge&logo=css3&logoColor=white)
 ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![image](https://img.shields.io/badge/json-000000?style=for-the-badge&logo=json&logoColor=white)
+![image](https://img.shields.io/badge/json-000000?style=for-the-badge&logo=json&logoColor=white)<br>
 ![image](https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![image](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)
 ![image](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
